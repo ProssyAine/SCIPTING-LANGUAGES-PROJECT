@@ -1,0 +1,690 @@
+<!--Ainembabazi Prossy-->
+<!--23/U/BIT/0251/KDAY-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!--  *****   Link To Custom CSS Style Sheet   *****  -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!--  *****   Link To Font Awesome Icons   *****  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!--  *****   Link To Owl Carousel   *****  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Bright Future</title>
+
+	<!-- Additional CSS for new features -->
+	<style>
+		/* Course card enhancements */
+		.course-duration {
+			padding: 0 15px;
+			color: #0066cc;
+			font-weight: 500;
+			margin-bottom: 10px;
+		}
+		
+		.course-duration i {
+			margin-right: 5px;
+		}
+		
+		.course-description {
+			padding: 0 15px;
+			margin-bottom: 10px;
+			font-size: 14px;
+			color: #555;
+			line-height: 1.4;
+		}
+		
+		.enroll-btn {
+			background-color: #0066cc;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 8px 15px;
+			margin: 10px 15px;
+			cursor: pointer;
+			font-weight: 500;
+			transition: background-color 0.3s;
+		}
+		
+		.enroll-btn:hover {
+			background-color: #0055aa;
+		}
+		
+		/* Search functionality */
+		.search-bar input {
+			width: 80%;
+			padding-right: 40px;
+		}
+		
+		.search-bar i {
+			cursor: pointer;
+		}
+		
+		.search-filter {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			margin-bottom: 20px;
+		}
+		
+		.search-filter input {
+			flex: 1;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+		}
+		
+		/* Enrollment modal */
+		.modal {
+			display: none;
+			position: fixed;
+			z-index: 1000;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+		
+		.modal-content {
+			background-color: white;
+			margin: 5% auto;
+			padding: 20px;
+			width: 70%;
+			max-width: 600px;
+			border-radius: 10px;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+		}
+		
+		.close-btn {
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		
+		.form-group {
+			margin-bottom: 15px;
+		}
+		
+		.form-group label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: 500;
+		}
+		
+		.form-group input, .form-group select {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+		}
+		
+		.submit-btn {
+			background-color: #0066cc;
+			color: white;
+			border: none;
+			padding: 12px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-weight: 500;
+			width: 100%;
+		}
+		
+		.hidden {
+			display: none;
+		}
+		
+		/* Success message */
+		.success-message {
+			background-color: #4CAF50;
+			color: white;
+			padding: 20px;
+			text-align: center;
+			border-radius: 5px;
+			margin-top: 15px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+<!--   *** Website Container Starts ***   -->
+<div class="website-container">
+	
+<!--   *** Home Section Starts ***   -->
+<section class="home" id="home">
+	<!--   === Main Navbar Starts ===   -->
+	<nav class="main-navbar">
+		<a href="#" class="logo">
+			<img src="images/home/logo.png">
+		</a>
+		<ul class="nav-list">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="courses.html">Courses</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<a href="about.html" class="get-started-btn-container">
+			<button class="get-started-btn btn">Get Started</button>
+		</a>
+		<div class="menu-btn">
+			<span></span>
+		</div>
+	</nav>
+	<!--   === Main Navbar Ends ===   -->
+	<!--   === Banner Starts ===   -->
+	<div class="banner">
+		
+		<div class="banner-desc">
+			<h2>We have a wide range of courses for you!</h2>
+			<p>We're committed to providing high-quality tech education that prepares you for real-world challenges.
+
+            </p>
+			<form class="search-bar" id="main-search-form">
+				<input type="search" id="main-search-input" placeholder="Search Your Course">
+				<i class="fa-solid fa-search" id="main-search-button"></i>
+			</form>
+		</div>
+
+        <div class="banner-img">
+			<div class="banner-img-container">
+				<img style="height: fit-content; border-radius: 7px;" src="images/home/college2.jpg">
+
+				<div class="states">
+					<div class="total-courses">
+						<div class="icon">
+							<i class="fa-solid fa-book"></i>
+						</div>
+						<div class="desc">
+							<span>184+</span>
+							<span>Total Courses</span>
+						</div>
+					</div>
+
+					<div class="courses-ratings">
+						<span>4.7<i class="fa-solid fa-star"></i></span>
+						<span>Ratings (20k)</span>
+					</div>
+				</div>
+
+				<div class="pattern">
+					<img style="height: 160px;" src="images/home/pattern.png">
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<!--   === Banner Ends ===   -->
+</section>
+<!--   *** Home Section Ends ***   -->
+
+
+
+
+<!--   *** Courses Section Starts ***   -->
+<section class="courses" id="courses">
+	<!--   *** Courses Header Starts ***   -->
+	<header class="section-header">
+		<div class="header-text">
+			<h1>Choose Your Favourite Course</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+		<div class="search-filter">
+			<input type="text" id="course-filter" placeholder="Filter courses by keyword...">
+		</div>
+		<button class="courses-btn btn" id="view-all-btn" style="margin-bottom: 420px; margin-right: 800px;">Enroll </button>
+	</header>
+	<!--   *** Courses Header Ends ***   -->
+	<!--   *** Courses Contents Starts ***   -->
+	<div class="course-contents" id="course-container">
+		
+		<div class="course-card">
+			<img src="images/courses/appdev.jpg">
+			<div class="category">
+				<div class="subject"><h3>Design</h3></div>
+				<img src="images/courses/figma.jpg">
+			</div>
+			<h2 class="course-title">UI/UX Design Fundamentals</h2>
+			<p class="course-description">Learn the principles of user interface and user experience design.</p>
+			<div class="course-duration">
+				<i class="fa-solid fa-clock"></i> 8 Weeks
+			</div>
+			<div class="course-desc">
+				<span><i class="fa-solid fa-video"></i> 45 Videos</span>
+				<span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+			</div>
+			<div class="course-ratings">
+				<span>4.9 <i class="fa-solid fa-star"></i></span>
+				<span><b>UGX</b>2,500,000</span>
+			</div>
+			<button class="enroll-btn" data-course="UI/UX Design Fundamentals" data-duration="8 Weeks" data-price="2,500,000">Enroll Now</button>
+		</div>
+
+		<div class="course-card">
+			<img src="images/courses/ai2.jpg">
+			<div class="category">
+				<div class="subject"><h3>Data Science</h3></div>
+				<img src="images/courses/ds2.jpg">
+			</div>
+			<h2 class="course-title">Data Science & Analytics</h2>
+			<p class="course-description">Master data analysis, visualization, and machine learning techniques using Python.</p>
+			<div class="course-duration">
+				<i class="fa-solid fa-clock"></i> 12 Weeks
+			</div>
+			<div class="course-desc">
+				<span><i class="fa-solid fa-video"></i> 12 Videos</span>
+				<span><i class="fa-solid fa-users"></i> 104+ Students</span>
+			</div>
+			<div class="course-ratings">
+				<span>4.9 <i class="fa-solid fa-star"></i></span>
+				<span><b>UGX</b>1,300,000</span>
+			</div>
+			<button class="enroll-btn" data-course="Data Science & Analytics" data-duration="12 Weeks" data-price="1,300,000">Enroll Now</button>
+		</div>
+
+		<div class="course-card">
+			<img src="images/courses/cl1.jpg">
+			<div class="category">
+				<div class="subject"><h3>Design</h3></div>
+				<img src="images/courses/ai2.jpg">
+			</div>
+			<h2 class="course-title">Cloud Computing Essentials</h2>
+			<p class="course-description">Learn the fundamentals of cloud platforms including AWS, Azure, and Google Cloud.</p>
+			<div class="course-duration">
+				<i class="fa-solid fa-clock"></i> 10 Weeks
+			</div>
+			<div class="course-desc">
+				<span><i class="fa-solid fa-video"></i> 45 Videos</span>
+				<span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+			</div>
+			<div class="course-ratings">
+				<span>4.9 <i class="fa-solid fa-star"></i></span>
+				<span><b>UGX</b>1,500,000</span>
+			</div>
+			<button class="enroll-btn" data-course="Cloud Computing Essentials" data-duration="10 Weeks" data-price="1,500,000">Enroll Now</button>
+		</div>
+
+		<div class="course-card">
+			<img src="images/courses/ds2.jpg">
+			<div class="category">
+				<div class="subject"><h3>Development</h3></div>
+				<img src="images/courses/ds1.jpg">
+			</div>
+			<h2 class="course-title">DevOps Engineering</h2>
+			<p class="course-description">Master continuous integration, continuous deployment, and infrastructure as code.</p>
+			<div class="course-duration">
+				<i class="fa-solid fa-clock"></i> 14 Weeks
+			</div>
+			<div class="course-desc">
+				<span><i class="fa-solid fa-video"></i> 45 Videos</span>
+				<span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+			</div>
+			<div class="course-ratings">
+				<span>4.9 <i class="fa-solid fa-star"></i></span>
+				<span><b>UGX</b>2,300,000</span>
+			</div>
+			<button class="enroll-btn" data-course="DevOps Engineering" data-duration="14 Weeks" data-price="2,300,000">Enroll Now</button>
+		</div>
+
+		<div class="course-card">
+			<img src="images/courses/ai2.jpg">
+			<div class="category">
+				<div class="subject"><h3>Development</h3></div>
+				<img src="images/courses/ai1.jpg">
+			</div>
+			<h2 class="course-title">AI & Machine Learning</h2>
+			<p class="course-description">Dive deep into artificial intelligence and machine learning algorithms.</p>
+			<div class="course-duration">
+				<i class="fa-solid fa-clock"></i> 16 Weeks
+			</div>
+			<div class="course-desc">
+				<span><i class="fa-solid fa-video"></i> 45 Videos</span>
+				<span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+			</div>
+			<div class="course-ratings">
+				<span>4.9 <i class="fa-solid fa-star"></i></span>
+				<span><b>UGX</b>1,700,000</span>
+			</div>
+			<button class="enroll-btn" data-course="AI & Machine Learning" data-duration="16 Weeks" data-price="1,700,000">Enroll Now</button>
+		</div>
+
+		<div class="course-card">
+			<img src="images/courses/cyber2.jpeg">
+			<div class="category">
+				<div class="subject"><h3>Security</h3></div>
+				<img src="images/courses/cyber1.jpeg">
+			</div>
+			<h2 class="course-title">Cybersecurity Fundamentals</h2>
+			<p class="course-description">Develop essential skills in network security, threat detection, and ethical hacking.</p>
+			<div class="course-duration">
+				<i class="fa-solid fa-clock"></i> 8 Weeks
+			</div>
+			<div class="course-desc">
+				<span><i class="fa-solid fa-video"></i> 45 Videos</span>
+				<span><i class="fa-solid fa-users"></i> 2154+ Students</span>
+			</div>
+			<div class="course-ratings">
+				<span>4.9 <i class="fa-solid fa-star"></i></span>
+				<span><b>UGX</b>700,000</span>
+			</div>
+			<button class="enroll-btn" data-course="Cybersecurity Fundamentals" data-duration="8 Weeks" data-price="700,000">Enroll Now</button>
+		</div>
+
+	</div>
+	<!--   *** Courses Contents Ends ***   -->
+</section>
+<!--   *** Courses Section Ends ***   -->
+
+<!-- Enrollment Modal -->
+<div id="enrollment-modal" class="modal">
+	<div class="modal-content">
+		<span class="close-btn">&times;</span>
+		<h2>Enroll in <span id="modal-course-title"></span></h2>
+		<p>Course Duration: <span id="modal-course-duration"></span> | Price: UGX <span id="modal-course-price"></span></p>
+		
+		<form id="enrollment-form">
+			<input type="hidden" id="form-course-title">
+			<input type="hidden" id="form-course-duration">
+			<input type="hidden" id="form-course-price">
+			
+			<div class="form-group">
+				<label for="student-name">Full Name</label>
+				<input type="text" id="student-name" required>
+			</div>
+			
+			<div class="form-group">
+				<label for="student-email">Email</label>
+				<input type="email" id="student-email" required>
+			</div>
+			
+			<div class="form-group">
+				<label for="student-phone">Phone Number</label>
+				<input type="tel" id="student-phone" required>
+			</div>
+			
+			<div class="form-group">
+				<label for="student-education">Highest Education Level</label>
+				<select id="student-education" required>
+					<option value="">Select Education Level</option>
+					<option value="high-school">High School</option>
+					<option value="diploma">Diploma</option>
+					<option value="bachelors">Bachelor's Degree</option>
+					<option value="masters">Master's Degree</option>
+					<option value="phd">PhD</option>
+				</select>
+			</div>
+			
+			<div class="form-group">
+				<label for="payment-method">Payment Method</label>
+				<select id="payment-method" required>
+					<option value="">Select Payment Method</option>
+					<option value="mobile-money">Mobile Money</option>
+					<option value="credit-card">Credit Card</option>
+					<option value="bank-transfer">Bank Transfer</option>
+				</select>
+			</div>
+			
+			<button type="submit" class="submit-btn">Complete Enrollment</button>
+		</form>
+		
+		<div class="success-message" id="success-message">
+			<h3>Enrollment Successful!</h3>
+			<p>Thank you for enrolling. We'll contact you shortly with more details.</p>
+		</div>
+	</div>
+</div>
+
+<!--   *** Teacher Section Starts ***   -->
+<section class="instructor">
+	<div class="instructor-container">
+		<h2>Become an instructor with Breakthrough Tech Academy</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<button class="teacher-btn btn">Your Details</button>
+	</div>
+</section>
+<!--   *** Teacher Section Ends ***   -->
+
+
+<!--   *** Footer Section Starts ***   -->
+<section class="footer" id="footer">
+	
+	<!--   === Footer Contents Starts ===   -->
+	<div class="footer-contents">
+		
+		<div class="footer-col footer-col-1">
+			<div class="col-title">
+				<img src="images/home/logo.png">
+			</div>
+			<div class="col-contents">
+				<p>Empowering the next generation of tech professionals with cutting-edge education and practical skills.</p>
+				<p>Discover our comprehensive range of tech courses designed to boost your career
+                </p>
+			</div>
+		</div>
+
+		<div class="footer-col footer-col-2">
+			<div class="col-title">
+				<h3>Contact</h3>
+			</div>
+			<div class="col-contents">
+				<div class="contact-row">
+					<span>Address</span>
+					<span>Kanjokya Street, 3048, Kampala</span>
+				</div>
+				<div class="contact-row">
+					<span>Phone</span>
+					<span>+256 987 23456</span>
+				</div>
+				<div class="contact-row">
+					<span>Website</span>
+					<span>btacademy.com</span>
+				</div>
+				<div class="contact-row">
+					<span>Email</span>
+					<span>info@btacademy.com</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-col footer-col-3">
+			<div class="col-title">
+				<h3>Quick Links</h3>
+			</div>
+			<div class="col-contents">
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="courses.html">Courses</a>
+				<a href="contact.html">Contact</a>
+			</div>
+		</div>
+
+		<div class="footer-col footer-col-4">
+			<div class="col-title">
+				<h3>Newsletter</h3>
+			</div>
+			<div class="col-contents">
+				<form class="newsletter">
+					<input type="email" placeholder="Your Email">
+					<button class="newsletter-btn btn" type="submit">Subscribe</button>
+				</form>
+			</div>
+		</div>
+
+	</div>
+	<!--   === Footer Contents Ends ===   -->
+	<div class="copy-rights">
+		<p><b>Breakthrough Academy 2025</b> All Rights Reserved</p>
+	</div>
+
+</section>
+<!--   *** Footer Section Ends ***   -->
+
+
+</div>
+<!--   *** Website Container Ends ***   -->
+
+
+
+<!--   *** Link To JQuery ***   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<!--   *** Link To Owl Carousel ***   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Course JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // DOM Elements
+    const mainSearchForm = document.getElementById('main-search-form');
+    const mainSearchInput = document.getElementById('main-search-input');
+    const mainSearchButton = document.getElementById('main-search-button');
+    const courseFilter = document.getElementById('course-filter');
+    const viewAllButton = document.getElementById('view-all-btn');
+    const enrollButtons = document.querySelectorAll('.enroll-btn');
+    const modal = document.getElementById('enrollment-modal');
+    const closeButton = document.querySelector('.close-btn');
+    const modalCourseTitle = document.getElementById('modal-course-title');
+    const modalCourseDuration = document.getElementById('modal-course-duration');
+    const modalCoursePrice = document.getElementById('modal-course-price');
+    const enrollmentForm = document.getElementById('enrollment-form');
+    const formCourseTitle = document.getElementById('form-course-title');
+    const formCourseDuration = document.getElementById('form-course-duration');
+    const formCoursePrice = document.getElementById('form-course-price');
+    const successMessage = document.getElementById('success-message');
+    
+    // Search functionality - Main banner search
+    mainSearchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const searchTerm = mainSearchInput.value.toLowerCase().trim();
+        courseFilter.value = searchTerm;
+        filterCourses(searchTerm);
+        
+        // Scroll to courses section
+        document.getElementById('courses').scrollIntoView({ behavior: 'smooth' });
+    });
+    
+    mainSearchButton.addEventListener('click', function() {
+        mainSearchForm.dispatchEvent(new Event('submit'));
+    });
+    
+    // Filter courses in the course section
+    courseFilter.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase().trim();
+        filterCourses(searchTerm);
+    });
+    
+    // Function to filter courses based on search term
+    function filterCourses(searchTerm) {
+        const courses = document.querySelectorAll('.course-card');
+        
+        courses.forEach(course => {
+            const title = course.querySelector('.course-title').textContent.toLowerCase();
+            const description = course.querySelector('.course-description').textContent.toLowerCase();
+            
+            if (title.includes(searchTerm) || description.includes(searchTerm) || searchTerm === '') {
+                course.style.display = 'block';
+            } else {
+                course.style.display = 'none';
+            }
+        });
+    }
+    
+    // View All button
+    viewAllButton.addEventListener('click', function() {
+        courseFilter.value = '';
+        filterCourses('');
+    });
+    
+    // Enrollment functionality
+    enrollButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const courseTitle = this.getAttribute('data-course');
+            const courseDuration = this.getAttribute('data-duration');
+            const coursePrice = this.getAttribute('data-price');
+            
+            // Set modal content
+            modalCourseTitle.textContent = courseTitle;
+            modalCourseDuration.textContent = courseDuration;
+            modalCoursePrice.textContent = coursePrice;
+            
+            // Set form hidden fields
+            formCourseTitle.value = courseTitle;
+            formCourseDuration.value = courseDuration;
+            formCoursePrice.value = coursePrice;
+            
+            // Show modal
+            modal.style.display = 'block';
+            
+            // Hide success message if previously shown
+            successMessage.style.display = 'none';
+        });
+    });
+    
+    // Close modal
+    closeButton.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+    
+    // Close modal when clicking outside
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+    
+    // Handle form submission
+    enrollmentForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const enrollmentData = {
+            course: formCourseTitle.value,
+            duration: formCourseDuration.value,
+            price: formCoursePrice.value,
+            studentName: document.getElementById('student-name').value,
+            email: document.getElementById('student-email').value,
+            phone: document.getElementById('student-phone').value,
+            education: document.getElementById('student-education').value,
+            paymentMethod: document.getElementById('payment-method').value,
+            enrollmentDate: new Date().toISOString()
+        };
+        
+        // Save to local storage
+        saveEnrollment(enrollmentData);
+        
+        // Hide form and show success message
+        enrollmentForm.classList.add('hidden');
+        successMessage.style.display = 'block';
+        
+        // Reset form after 2 seconds
+        setTimeout(function() {
+            enrollmentForm.reset();
+            enrollmentForm.classList.remove('hidden');
+        }, 3000);
+    });
+    
+    // Function to save enrollment to local storage
+    function saveEnrollment(data) {
+        // Get existing enrollments or initialize new array
+        let enrollments = JSON.parse(localStorage.getItem('courseEnrollments')) || [];
+        
+        // Add new enrollment
+        enrollments.push(data);
+        
+        // Save back to local storage
+        localStorage.setItem('courseEnrollments', JSON.stringify(enrollments));
+    }
+});
+</script>
+
+<!--   *** Link To Custom Script File ***   -->
+<script type="text/javascript" src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,501 @@
+<!--Ainembabazi Prossy-->
+<!--23/U/BIT/0251/KDAY-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!--  *****   Link To Custom CSS Style Sheet   *****  -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!--  *****   Link To Font Awsome Icons   *****  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!--  *****   Link To Owl Carousel   *****  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Bright Future</title>
+
+    <style>
+        /* Styles for the FAQ section */
+        .faq-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #ffffff; /* Optional background color */
+        }
+
+        .faq-section h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ffffff;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .faq-question h3 {
+            font-size: 1.2em;
+            color: #555;
+            margin: 0;
+        }
+
+        .faq-question .toggle-icon {
+            font-size: 1.2em;
+            color: #010b36;
+        }
+
+        .faq-answer {
+            padding: 15px;
+            background-color: #ffffff;
+            display: none; /* Initially hidden */
+            font-size: 1em;
+            color: #5f5f5f;
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question .toggle-icon::before {
+            content: '\f068'; /* Minus icon */
+        }
+
+        .faq-question .toggle-icon::before {
+            content: '\f067'; /* Plus icon */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+<!--   *** Website Container Starts ***   -->
+<div class="website-container">
+	
+<!--   *** Home Section Starts ***   -->
+<section class="home" id="home">
+	<!--   === Main Navbar Starts ===   -->
+	<nav class="main-navbar">
+		<a href="#" class="logo">
+			<img src="images/home/logo.png">
+		</a>
+		<ul class="nav-list">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="courses.html">Courses</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<a href="about.html" class="get-started-btn-container">
+			<button class="get-started-btn btn">Get Started</button>
+		</a>
+		<div class="menu-btn">
+			<span></span>
+		</div>
+	</nav>
+	<!--   === Main Navbar Ends ===   -->
+	<!--   === Banner Starts ===   -->
+	<div class="banner">
+		
+		<div class="banner-desc">
+			<h2>Unlock Your Tech Potential</h2>
+			<p>BreakThrough Tech Academy offers cutting-edge courses designed to transform your career in technology. Learn from industry experts and gain practical skills for the digital future.
+            </p>
+			<form class="search-bar">
+				<input type="search" placeholder="Search Your Course">
+				<i class="fa-solid fa-search"></i>
+			</form>
+		</div>
+
+		<div class="banner-img">
+			<div class="banner-img-container">
+				<img style="height: fit-content; border-radius: 7px;" src="images/home/college1.jpg">
+
+				<div class="pattern">
+					<img style="height: 160px;" src="images/home/pattern.png">
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<!--   === Banner Ends ===   -->
+</section>
+<!--   *** Home Section Ends ***   -->
+
+
+<!--   *** Services Section Starts ***   -->
+<section class="services" id="services">
+	<!--   *** Services Header Starts ***   -->
+	<header class="section-header">
+		<h1>Why Choose Us</h1>
+		<p>Discover our most popular courses designed to help you master the latest technologies and advance your career.</p>
+	</header>
+	<!--   *** Services Header Ends ***   -->
+	<!--   *** Services Contents Starts ***   -->
+	<div class="services-contents">
+
+		<div class="service-box">
+			<div class="service-icon">
+				<i class="fa-solid fa-calendar"></i>
+			</div>
+			<div class="service-desc">
+				<h2>Flexible Timing</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+
+		<div class="service-box">
+			<div class="service-icon">
+				<i class="fa-solid fa-users"></i>
+			</div>
+			<div class="service-desc">
+				<h2>Expert Teachers</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+
+		<div class="service-box">
+			<div class="service-icon">
+				<i class="fa-solid fa-clock"></i>
+			</div>
+			<div class="service-desc">
+				<h2>24/7 Live Support</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+
+	</div>
+	<!--   *** Services Contents Ends ***   -->
+</section>
+<!--   *** Services Section Ends ***   -->
+
+
+
+
+
+<!--   *** Teacher Section Starts ***   -->
+<section class="instructor">
+	<div class="instructor-container">
+		<h2>Become an instructor with Bright Future Platform</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<button class="teacher-btn btn">Your Details</button>
+	</div>
+</section>
+
+
+
+<!--   *** Testimonials Section Starts ***   -->
+<section class="testimonials" id="testimonials">
+	<!--   === Testimonials Section Header Starts ===   -->
+	<header class="section-header">
+		<h1>Testimonials</h1>
+		<p>Hear from our graduates about how our courses have transformed their careers.</p>
+	</header>
+	<!--   === Testimonials Section Header Ends ===   -->
+	<!--   === Testimonials Contents Starts ===   -->
+	<div class="owl-carousel owl-theme testimonials-slider">
+
+    	<div class="item testimonials-item">
+    		<div class="profile">
+    			<div class="profile-image">
+    				<img src="images/testimonials/student.jpg">
+    			</div>
+    			<div class="profile-desc">
+    				<span>Doreen Kisakye</span>
+    				<span>Web Designer</span>
+    			</div>
+    		</div>
+    		<p>The Full-Stack Web Development course completely transformed my career. 
+                The curriculum was comprehensive and up-to-date with industry standards. Within two months of completing the course, I landed my dream job as a developer."</p>
+    		<div class="quote">
+    			<i class="fa fa-quote-left"></i>
+    		</div>
+    		<div class="ratings">
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    		</div>
+    	</div>
+
+    	<div class="item testimonials-item">
+    		<div class="profile">
+    			<div class="profile-image">
+    				<img src="images/testimonials/student.jpg">
+    			</div>
+    			<div class="profile-desc">
+    				<span>Moureen Kisa</span>
+    				<span>Data Scientist</span>
+    			</div>
+    		</div>
+    		<p>I had zero background in data science when I started. 
+                The instructors were incredibly supportive and made complex concepts accessible. The hands-on projects gave me real-world experience that I showcase in interviews</p>
+    		<div class="quote">
+    			<i class="fa fa-quote-left"></i>
+    		</div>
+    		<div class="ratings">
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    		</div>
+    	</div>
+
+    	<div class="item testimonials-item">
+    		<div class="profile">
+    			<div class="profile-image">
+    				<img src="images/testimonials/student.jpg">
+    			</div>
+    			<div class="profile-desc">
+    				<span>Kyabiirye Deborah</span>
+    				<span>Cyber security anallyst</span>
+    			</div>
+    		</div>
+    		<p>The Cybersecurity course exceeded my expectations. The labs and simulations provided practical experience with real security threats. 
+                I received a job offer before even completing the course!</p>
+    		<div class="quote">
+    			<i class="fa fa-quote-left"></i>
+    		</div>
+    		<div class="ratings">
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    		</div>
+    	</div>
+
+    	<div class="item testimonials-item">
+    		<div class="profile">
+    			<div class="profile-image">
+    				<img src="images/testimonials/student.jpg">
+    			</div>
+    			<div class="profile-desc">
+    				<span>Kinya Naorri</span>
+    				<span>UI/UX Designer</span>
+    			</div>
+    		</div>
+    		<p>Uunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+    		<div class="quote">
+    			<i class="fa fa-quote-left"></i>
+    		</div>
+    		<div class="ratings">
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    		</div>
+    	</div>
+
+    	<div class="item testimonials-item">
+    		<div class="profile">
+    			<div class="profile-image">
+    				<img src="images/testimonials/student.jpg">
+    			</div>
+    			<div class="profile-desc">
+    				<span>Kamoga Unis</span>
+    				<span>Web Developer</span>
+    			</div>
+    		</div>
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+    		<div class="quote">
+    			<i class="fa fa-quote-left"></i>
+    		</div>
+    		<div class="ratings">
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    		</div>
+    	</div>
+
+	</div>
+	<!--   === Testimonials Contents Ends ===   -->
+</section>
+<!--   *** Testimonials Section Ends ***   -->
+
+<!--   *** FAQ Section STARTS ***   -->
+
+<div class="website-container">
+
+    <section class="faq-section" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>What types of courses do you offer?</h3>
+                <span class="toggle-icon"></span>
+            </div>
+            <div class="faq-answer">
+                <p>We offer a wide range of courses in various tech fields including Web Development, Data Science, Cloud Computing, Cybersecurity, AI & Machine Learning, and UI/UX Design. Our courses cater to different skill levels, from beginners to advanced learners.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Are the courses online or in-person?</h3>
+                <span class="toggle-icon"></span>
+            </div>
+            <div class="faq-answer">
+                <p>Currently, all our courses are delivered online, providing you with the flexibility to learn from anywhere at your own pace. We utilize interactive video lectures, hands-on projects, and live Q&A sessions to ensure an engaging learning experience.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Do you provide any support after completing a course?</h3>
+                <span class="toggle-icon"></span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes, we offer ongoing support to our graduates. This includes access to our alumni network, career guidance resources, and in some cases, opportunities for mentorship and project collaboration.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>What are the payment options available?</h3>
+                <span class="toggle-icon"></span>
+            </div>
+            <div class="faq-answer">
+                <p>We offer several convenient payment options, including credit/debit cards, mobile money, and bank transfers. Specific payment details will be provided during the enrollment process.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How long do the courses typically last?</h3>
+                <span class="toggle-icon"></span>
+            </div>
+            <div class="faq-answer">
+                <p>The duration of our courses varies depending on the subject and depth of content. Generally, our courses range from 8 to 16 weeks. You can find the specific duration for each course on its respective details page.</p>
+            </div>
+        </div>
+    </section>
+    </div>
+<!--   *** FAQ Section Ends ***   -->
+
+
+<!--   *** Footer Section Starts ***   -->
+<section class="footer" id="footer">
+	
+	<!--   === Footer Contents Starts ===   -->
+	<div class="footer-contents">
+		
+		<div class="footer-col footer-col-1">
+			<div class="col-title">
+				<img src="images/home/logo.png">
+			</div>
+			<div class="col-contents">
+				<p>Empowering the next generation of tech professionals with cutting-edge education and practical skills.</p>
+				<p>Discover our comprehensive range of tech courses designed to boost your career
+                </p>
+			</div>
+		</div>
+
+		<div class="footer-col footer-col-2">
+			<div class="col-title">
+				<h3>Contact</h3>
+			</div>
+			<div class="col-contents">
+				<div class="contact-row">
+					<span>Address</span>
+					<span>Kanjokya Street, 3048, Kampala</span>
+				</div>
+				<div class="contact-row">
+					<span>Phone</span>
+					<span>+256 987 23456</span>
+				</div>
+				<div class="contact-row">
+					<span>Website</span>
+					<span>btacademy.com</span>
+				</div>
+				<div class="contact-row">
+					<span>Email</span>
+					<span>info@btacademy.com</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-col footer-col-3">
+			<div class="col-title">
+				<h3>Quick Links</h3>
+			</div>
+			<div class="col-contents">
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="courses.html">Courses</a>
+				<a href="contact.html">Contact</a>
+			</div>
+		</div>
+
+		<div class="footer-col footer-col-4">
+			<div class="col-title">
+				<h3>Newsletter</h3>
+			</div>
+			<div class="col-contents">
+				<form class="newsletter">
+					<input type="email" placeholder="Your Email">
+					<button class="newsletter-btn btn" type="submit">Subscribe</button>
+				</form>
+			</div>
+		</div>
+
+	</div>
+	<!--   === Footer Contents Ends ===   -->
+	<div class="copy-rights">
+		<p><b>Breakthrough Academy 2025</b> All Rights Reserved</p>
+	</div>
+
+</section>
+<!--   *** Footer Section Ends ***   -->
+
+
+</div>
+<!--   *** Website Container Ends ***   -->
+
+
+
+<!--   *** Link To JQuery ***   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<!--   *** Link To Owl Carousel ***   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!--   *** Link To Curstom Script File ***   -->
+<script type="text/javascript" src="script1.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            const toggleIcon = item.querySelector('.toggle-icon');
+
+            question.addEventListener('click', function() {
+                item.classList.toggle('active');
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>
